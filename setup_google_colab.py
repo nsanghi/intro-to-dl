@@ -10,7 +10,7 @@ import requests
 def download_github_code(path):
     filename = path.rsplit("/")[-1]
     os.system("shred -u {}".format(filename))
-    os.system("wget https://raw.githubusercontent.com/hse-aml/intro-to-dl/master/{} -O {}".format(path, filename))
+    os.system("wget https://raw.githubusercontent.com/nsanghi/intro-to-dl/master/{} -O {}".format(path, filename))
 
 
 def setup_common():
@@ -43,6 +43,7 @@ def setup_week2():
     download_github_code("week2/v2/grading_utils.py")
     download_github_code("week2/v2/matplotlib_utils.py")
     download_github_code("week2/v2/preprocessed_mnist.py")
+    download_github_code("week2/submit.py")
     setup_keras()
 
 
