@@ -43,6 +43,7 @@ def setup_week2():
     download_github_code("week2/v2/grading_utils.py")
     download_github_code("week2/v2/matplotlib_utils.py")
     download_github_code("week2/v2/preprocessed_mnist.py")
+    download_github_code("week2/submit.py")
     setup_keras()
 
 
